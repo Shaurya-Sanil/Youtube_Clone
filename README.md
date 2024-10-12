@@ -9,4 +9,4 @@
 #### •Basic footer with navigation links.
 
 ## This project was created by following a tutorial by SuperSimpleDev. 
-#### link to the video : https://youtu.be/G3e-cpL7ofc?si=vVx47LVnC77695eN
+#### link to the course that i followed : https://youtu.be/G3e-cpL7ofc?si=vVx47LVnC77695eN
