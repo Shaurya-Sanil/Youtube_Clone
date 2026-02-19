@@ -38,6 +38,7 @@
                 </button>
             </div>
             <div class="right-section">
+                <button id="theme-toggle">🌙</button>
                 <div class="upload-icon-container">
                     <img class="upload-icon" src="icons/upload.svg">
                     <div class="tooltip">Create</div>
@@ -49,7 +50,7 @@
                     <div class="notifications-count">3</div>
                 </div>
                 <img class="current-user-picture"
-                    src="channel-pictures/Bro Code.jpg">
+                    src="channel-pictures/youtube_user.png">
             </div>
         </header>
 
@@ -150,14 +151,205 @@
                 </div>
             </a>
 
-            <div class="sidebar-link">
-                <img src="icons/library.svg">
-                <div>Library</div>
-            </div>
+            <a href="library.html">
+                <div class="sidebar-link">
+                    <img src="icons/library.svg">
+                    <div>Library</div>
+                </div>
+            </a>
         </nav>
+
+        <!-- Category Pills -->
+        <div class="category-pills-container">
+            <div class="category-pills">
+                <button class="pill active">All</button>
+                <button class="pill">JavaScript</button>
+                <button class="pill">Python</button>
+                <button class="pill">Web Development</button>
+                <button class="pill">Gaming</button>
+                <button class="pill">Music</button>
+                <button class="pill">Live</button>
+                <button class="pill">Cooking</button>
+                <button class="pill">Recently uploaded</button>
+                <button class="pill">Watched</button>
+                <button class="pill">New to you</button>
+            </div>
+        </div>
 
         <main>
             <section class="video-grid">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a
+                            href="https://youtu.be/xk4_1vDrzzo?si=hnuKPzYDEOvrO-a4">
+                            <img class="thumbnail"
+                                src="thumbnails/java-course-thumbnail.webp">
+                        </a>
+                        <div class="video-time">12:00:00</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <a href="https://www.youtube.com/@BroCodez">
+                                <img class="profile-picture"
+                                    src="channel-pictures/Bro Code.jpg">
+                            </a>
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                Java Full Course for free ☕
+                            </p>
+                            <p class="video-author">
+                                Bro Code
+                            </p>
+                            <p class="video-stats">
+                                11M views &#183; 3 years ago
+                            </p>
+                            <button class="subscribe-button">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a
+                            href="https://youtu.be/Feny5bs2JCg?si=po9c9tQr3yOMJbPi">
+                            <img class="thumbnail"
+                                src="thumbnails/razer-keyboard.webp">
+                        </a>
+                        <div class="video-time">7:42</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <a href="https://www.youtube.com/@optimumtech">
+                                <img class="profile-picture"
+                                    src="channel-pictures/razer-openium.jpg">
+                            </a>
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                Razer's new keyboard is basically cheating
+                            </p>
+
+                            <p class="video-author">
+                                optimum
+                            </p>
+
+                            <p class="video-stats">
+                                4.1M views &#183; 2 months ago
+                            </p>
+                            <button class="subscribe-button">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a
+                            href="https://youtu.be/qOkZiVlQHMs?si=FdN4ewTLCzO09oQp">
+                            <img class="thumbnail"
+                                src="thumbnails/gordon-indian-cooking.webp">
+                        </a>
+                        <div class="video-time">9:11</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture"
+                                src="channel-pictures/gordon-ramsay.jpg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                Gordon Ramsay Enters An Indian Cooking
+                                Competition | Gordon's Great Escape
+                            </p>
+                            <p class="video-author">
+                                Gordon Ramsay
+                            </p>
+                            <p class="video-stats">
+                                14M views &#183; 5 year ago
+                            </p>
+                            <button class="subscribe-button">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a
+                            href="https://youtu.be/xk4_1vDrzzo?si=0VLnJA9rJD4rNk2k">
+                            <img class="thumbnail"
+                                src="thumbnails/setup-tour-pewdiepie.webp">
+                        </a>
+                        <div class="video-time">21:43</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture"
+                                src="channel-pictures/Pewdiepie.jpg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                My 6 Billion $ Setup Tour
+                            </p>
+                            <p class="video-author">
+                                Pewdiepie
+                            </p>
+                            <p class="video-stats">
+                                10M views &#183; 2 years ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail"
+                            src="thumbnails/100-seconds-c++.webp">
+                        <div class="video-time">2:46</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture"
+                                src="channel-pictures/Fireship.jpg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                C++ in 100 seconds
+                            </p>
+                            <p class="video-author">
+                                Fireship
+                            </p>
+                            <p class="video-stats">
+                                2M views &#183; 2 years ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail"
+                            src="thumbnails/duck-song-5.webp">
+                        <div class="video-time">3:01</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture"
+                                src="channel-pictures/fireforest-ducksong.jpg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                The Duck Song 5
+                            </p>
+                            <p class="video-author">
+                                forrestfire101
+                            </p>
+                            <p class="video-stats">
+                                209k views &#183; 12 hours ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="video-preview">
                     <div class="thumbnail-row">
                         <a
@@ -255,222 +447,59 @@
                             href="https://youtu.be/xk4_1vDrzzo?si=0VLnJA9rJD4rNk2k">
                             <img class="thumbnail"
                                 src="thumbnails/setup-tour-pewdiepie.webp">
-                            <div class="video-time">21:43</div>
+                        </a>
+                        <div class="video-time">21:43</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture"
+                                src="channel-pictures/Pewdiepie.jpg">
                         </div>
-                        <div class="video-info-grid">
-                            <div class="channel-picture">
-                                <img class="profile-picture"
-                                    src="channel-pictures/Pewdiepie.jpg">
-                            </div>
-                            <div class="video-info">
-                                <p class="video-title">
-                                    My 6 Billion $ Setup Tour
-                                </p>
-                                <p class="video-author">
-                                    Pewdiepie
-                                </p>
-                                <p class="video-stats">
-                                    10M views &#183; 2 years ago
-                                </p>
-                            </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                My 6 Billion $ Setup Tour
+                            </p>
+                            <p class="video-author">
+                                Pewdiepie
+                            </p>
+                            <p class="video-stats">
+                                10M views &#183; 2 years ago
+                            </p>
                         </div>
                     </div>
+                </div>
 
-                    <div class="video-preview">
-                        <div class="thumbnail-row">
-                            <img class="thumbnail"
-                                src="thumbnails/100-seconds-c++.webp">
-                            <div class="video-time">2:46</div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail"
+                            src="thumbnails/100-seconds-c++.webp">
+                        <div class="video-time">2:46</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture"
+                                src="channel-pictures/Fireship.jpg">
                         </div>
-                        <div class="video-info-grid">
-                            <div class="channel-picture">
-                                <img class="profile-picture"
-                                    src="channel-pictures/Fireship.jpg">
-                            </div>
-                            <div class="video-info">
-                                <p class="video-title">
-                                    C++ in 100 seconds
-                                </p>
-                                <p class="video-author">
-                                    Fireship
-                                </p>
-                                <p class="video-stats">
-                                    2M views &#183; 2 years ago
-                                </p>
-                            </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                C++ in 100 seconds
+                            </p>
+                            <p class="video-author">
+                                Fireship
+                            </p>
+                            <p class="video-stats">
+                                2M views &#183; 2 years ago
+                            </p>
                         </div>
                     </div>
+                </div>
+            </section>
+        </main>
 
-                    <div class="video-preview">
-                        <div class="thumbnail-row">
-                            <img class="thumbnail"
-                                src="thumbnails/duck-song-5.webp">
-                            <div class="video-time">3:01</div>
-                        </div>
-                        <div class="video-info-grid">
-                            <div class="channel-picture">
-                                <img class="profile-picture"
-                                    src="channel-pictures/fireforest-ducksong.jpg">
-                            </div>
-                            <div class="video-info">
-                                <p class="video-title">
-                                    The Duck Song 5
-                                </p>
-                                <p class="video-author">
-                                    forrestfire101
-                                </p>
-                                <p class="video-stats">
-                                    209k views &#183; 12 hours ago
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+        <!-- Scroll to Top Button -->
+        <button id="scroll-top-btn">↑</button>
 
-                    <div class="video-preview">
-                        <div class="thumbnail-row">
-                            <a
-                                href="https://youtu.be/xk4_1vDrzzo?si=hnuKPzYDEOvrO-a4">
-                                <img class="thumbnail"
-                                    src="thumbnails/java-course-thumbnail.webp">
-                            </a>
-                            <div class="video-time">12:00:00</div>
-                        </div>
-                        <div class="video-info-grid">
-                            <div class="channel-picture">
-                                <a href="https://www.youtube.com/@BroCodez">
-                                    <img class="profile-picture"
-                                        src="channel-pictures/Bro Code.jpg">
-                                </a>
-                            </div>
-                            <div class="video-info">
-                                <p class="video-title">
-                                    Java Full Course for free ☕
-                                </p>
-                                <p class="video-author">
-                                    Bro Code
-                                </p>
-                                <p class="video-stats">
-                                    11M views &#183; 3 years ago
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+        <script src="scripts/main.js"></script>
+    </body>
 
-                    <div class="video-preview">
-                        <div class="thumbnail-row">
-                            <a
-                                href="https://youtu.be/Feny5bs2JCg?si=po9c9tQr3yOMJbPi">
-                                <img class="thumbnail"
-                                    src="thumbnails/razer-keyboard.webp">
-                            </a>
-                            <div class="video-time">7:42</div>
-                        </div>
-                        <div class="video-info-grid">
-                            <div class="channel-picture">
-                                <a href="https://www.youtube.com/@optimumtech">
-                                    <img class="profile-picture"
-                                        src="channel-pictures/razer-openium.jpg">
-                                </a>
-                            </div>
-                            <div class="video-info">
-                                <p class="video-title">
-                                    Razer's new keyboard is basically cheating
-                                </p>
-
-                                <p class="video-author">
-                                    optimum
-                                </p>
-
-                                <p class="video-stats">
-                                    4.1M views &#183; 2 months ago
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="video-preview">
-                        <div class="thumbnail-row">
-                            <a
-                                href="https://youtu.be/qOkZiVlQHMs?si=FdN4ewTLCzO09oQp">
-                                <img class="thumbnail"
-                                    src="thumbnails/gordon-indian-cooking.webp">
-                            </a>
-                            <div class="video-time">9:11</div>
-                        </div>
-                        <div class="video-info-grid">
-                            <div class="channel-picture">
-                                <img class="profile-picture"
-                                    src="channel-pictures/gordon-ramsay.jpg">
-                            </div>
-                            <div class="video-info">
-                                <p class="video-title">
-                                    Gordon Ramsay Enters An Indian Cooking
-                                    Competition | Gordon's Great Escape
-                                </p>
-                                <p class="video-author">
-                                    Gordon Ramsay
-                                </p>
-                                <p class="video-stats">
-                                    14M views &#183; 5 year ago
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="video-preview">
-                        <div class="thumbnail-row">
-                            <a
-                                href="https://youtu.be/xk4_1vDrzzo?si=0VLnJA9rJD4rNk2k">
-                                <img class="thumbnail"
-                                    src="thumbnails/setup-tour-pewdiepie.webp">
-                                <div class="video-time">21:43</div>
-                            </div>
-                            <div class="video-info-grid">
-                                <div class="channel-picture">
-                                    <img class="profile-picture"
-                                        src="channel-pictures/Pewdiepie.jpg">
-                                </div>
-                                <div class="video-info">
-                                    <p class="video-title">
-                                        My 6 Billion $ Setup Tour
-                                    </p>
-                                    <p class="video-author">
-                                        Pewdiepie
-                                    </p>
-                                    <p class="video-stats">
-                                        10M views &#183; 2 years ago
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="video-preview">
-                            <div class="thumbnail-row">
-                                <img class="thumbnail"
-                                    src="thumbnails/100-seconds-c++.webp">
-                                <div class="video-time">2:46</div>
-                            </div>
-                            <div class="video-info-grid">
-                                <div class="channel-picture">
-                                    <img class="profile-picture"
-                                        src="channel-pictures/Fireship.jpg">
-                                </div>
-                                <div class="video-info">
-                                    <p class="video-title">
-                                        C++ in 100 seconds
-                                    </p>
-                                    <p class="video-author">
-                                        Fireship
-                                    </p>
-                                    <p class="video-stats">
-                                        2M views &#183; 2 years ago
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </main>
-                <script src="scripts/main.js"></script>
-            </body>
-
-        </html>
+</html>
