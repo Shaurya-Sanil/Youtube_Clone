@@ -38,7 +38,7 @@ export default function Header() {
     };
 
     const handleNotificationClick = () => {
-        showNotification('You have 3 new notifications!');
+        showNotification('Sign in to get notifications');
     };
 
     return (
