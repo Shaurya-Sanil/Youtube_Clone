@@ -1,6 +1,6 @@
 import React from 'react';
-import VideoPreview from './VideoPreview';
-import './styles/video.css';
+import VideoPreview from '../components/common/VideoPreview';
+import '../styles/video.css';
 
 export default function Explore() {
     const trendingVideos = [

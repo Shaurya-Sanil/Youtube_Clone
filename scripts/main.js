@@ -239,14 +239,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Category pills interaction
-    const categoryPills = document.querySelectorAll('.pill');
-    categoryPills.forEach(pill => {
-        pill.addEventListener('click', () => {
-            // Remove active class from all pills
-            categoryPills.forEach(p => p.classList.remove('active'));
-            // Add active class to clicked pill
-            pill.classList.add('active');
-        });
-    });
+
 });

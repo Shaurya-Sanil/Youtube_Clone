@@ -1,7 +1,7 @@
 import React from 'react';
-import CategoryPills from './CategoryPills';
-import VideoPreview from './VideoPreview';
-import './styles/video.css';
+import CategoryPills from '../components/common/CategoryPills';
+import VideoPreview from '../components/common/VideoPreview';
+import '../styles/video.css';
 
 export default function Home() {
     const videos = [

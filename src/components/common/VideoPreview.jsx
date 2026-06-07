@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './styles/video.css';
+import '../../styles/video.css';
 
 export default function VideoPreview({ video }) {
     const [isSubscribed, setIsSubscribed] = useState(false);

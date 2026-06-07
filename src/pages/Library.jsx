@@ -1,20 +1,20 @@
 import React from 'react';
-import VideoPreview from './VideoPreview';
-import './styles/video.css';
+import VideoPreview from '../components/common/VideoPreview';
+import '../styles/video.css';
 
-export default function Subscriptions() {
-    const subscriptionVideos = [
+export default function Library() {
+    const libraryVideos = [
         {
             id: 1,
-            title: 'Java Full Course for free ☕',
-            author: 'Bro Code',
-            views: '11M',
-            uploadedAt: '3 years ago',
-            thumbnail: 'thumbnails/java-course-thumbnail.webp',
-            duration: '12:00:00',
-            link: 'https://youtu.be/xk4_1vDrzzo?si=hnuKPzYDEOvrO-a4',
-            channelImage: 'channel-pictures/Bro Code.jpg',
-            channelUrl: 'https://www.youtube.com/@BroCodez',
+            title: 'My 6 Billion $ Setup Tour',
+            author: 'Pewdiepie',
+            views: '10M',
+            uploadedAt: '2 years ago',
+            thumbnail: 'thumbnails/setup-tour-pewdiepie.webp',
+            duration: '21:43',
+            link: 'https://youtu.be/xk4_1vDrzzo?si=0VLnJA9rJD4rNk2k',
+            channelImage: 'channel-pictures/Pewdiepie.jpg',
+            channelUrl: 'https://www.youtube.com/@PewDiePie',
             showSubscribe: false,
         },
         {
@@ -35,7 +35,7 @@ export default function Subscriptions() {
     return (
         <main>
             <section className="video-grid">
-                {subscriptionVideos.map((video) => (
+                {libraryVideos.map((video) => (
                     <VideoPreview key={video.id} video={video} />
                 ))}
             </section>

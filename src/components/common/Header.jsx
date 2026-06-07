@@ -1,26 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import './styles/header.css';
+import { useTheme } from '../../hooks/useTheme';
+import { useNotification } from '../../hooks/useNotification';
+import '../../styles/header.css';
 
 export default function Header() {
-    const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
-    const [notification, setNotification] = useState(null);
-
-    useEffect(() => {
-        document.documentElement.setAttribute('data-theme', theme);
-        localStorage.setItem('theme', theme);
-    }, [theme]);
-
-    const showNotification = (message) => {
-        setNotification(message);
-        setTimeout(() => {
-            setNotification(null);
-        }, 3000);
-    };
+    const { theme, toggleTheme } = useTheme();
+    const { notification, showNotification } = useNotification();
 
     const handleThemeToggle = () => {
-        const newTheme = theme === 'dark' ? 'light' : 'dark';
-        setTheme(newTheme);
+        const newTheme = toggleTheme();
         showNotification(`Switched to ${newTheme} mode!`);
     };
 
@@ -52,10 +41,6 @@ export default function Header() {
         showNotification('You have 3 new notifications!');
     };
 
-    const handleVoiceSearch = () => {
-        // Visual feedback only
-    };
-
     return (
         <>
             <header className="header">
@@ -76,7 +61,7 @@ export default function Header() {
                         <img className="search-icon" src="icons/search.svg" alt="search" />
                         <div className="tooltip">Search</div>
                     </button>
-                    <button className="voice-search-button" onClick={handleVoiceSearch}>
+                    <button className="voice-search-button">
                         <img className="voice-search-icon" src="icons/voice-search-icon.svg" alt="voice" />
                         <div className="tooltip">Search with your voice</div>
                     </button>

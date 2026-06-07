@@ -1,22 +1,11 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import './styles/sidebar.css';
+import { CHANNELS, HIDDEN_CHANNELS } from '../../utils/constants';
+import '../../styles/sidebar.css';
 
 export default function Sidebar() {
     const [showMoreChannels, setShowMoreChannels] = useState(false);
     const location = useLocation();
-
-    const channels = [
-        { id: 1, name: 'Bro Code', image: 'channel-pictures/Bro Code.jpg', url: 'https://www.youtube.com/@BroCodez' },
-        { id: 2, name: 'Fireship', image: 'channel-pictures/Fireship.jpg', url: 'https://www.youtube.com/@Fireship' },
-        { id: 3, name: 'Gordon Ramsay', image: 'channel-pictures/gordon-ramsay.jpg', url: 'https://www.youtube.com/@gordonramsay' },
-        { id: 4, name: 'Pewdiepie', image: 'channel-pictures/Pewdiepie.jpg', url: 'https://www.youtube.com/@PewDiePie' },
-    ];
-
-    const hiddenChannels = [
-        { id: 5, name: 'Optimum', image: 'channel-pictures/razer-openium.jpg', url: 'https://www.youtube.com/@optimumtech' },
-        { id: 6, name: 'forrestfire101', image: 'channel-pictures/fireforest-ducksong.jpg', url: 'https://www.youtube.com/@forrestfire101' },
-    ];
 
     const isActive = (path) => location.pathname === path ? 'active' : '';
 
@@ -37,7 +26,7 @@ export default function Sidebar() {
             </Link>
 
             <div className="subscribed-channels">
-                {channels.map((channel) => (
+                {CHANNELS.map((channel) => (
                     <div key={channel.id} className="sidebar-link">
                         <div className="channel">
                             <a href={channel.url} target="_blank" rel="noopener noreferrer">
@@ -50,7 +39,7 @@ export default function Sidebar() {
                     </div>
                 ))}
 
-                {showMoreChannels && hiddenChannels.map((channel) => (
+                {showMoreChannels && HIDDEN_CHANNELS.map((channel) => (
                     <div key={channel.id} className="sidebar-link">
                         <div className="channel">
                             <a href={channel.url} target="_blank" rel="noopener noreferrer">
